@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <RootNamespace>LibraryProject_Yonatan</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LibraryLogic2\Library_Dal2.csproj" />
+    <ProjectReference Include="..\LogicForLibrary\LogicForLibrary.csproj" />
+  </ItemGroup>
+
+</Project>

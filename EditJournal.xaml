@@ -1,0 +1,65 @@
+﻿<Window x:Class="LibraryProject_Yonatan.EditJournal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryProject_Yonatan"
+        mc:Ignorable="d"
+        Title="EditJournal" Height="450" Width="800">
+    <Grid>
+        <Grid Background="#4d7278">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Content="Name:"/>
+            <TextBox Grid.Row="0" Grid.Column="1" x:Name="NameTextBox"/>
+            <Label Grid.Row="1" Grid.Column="0" Content="Publisher:"/>
+            <TextBox Grid.Row="1" Grid.Column="1" x:Name="PublisherTextBox"/>
+            <Label Grid.Row="3" Grid.Column="0" Content="Price:"/>
+            <TextBox Grid.Row="3" Grid.Column="1" x:Name="PriceTextBox"/>
+            <Label Grid.Row="4" Grid.Column="0" Content="Publication Date:"/>
+            <DatePicker Grid.Row="4" Grid.Column="1" x:Name="PublicationDatePicker"/>
+            <Label Grid.Row="5" Grid.Column="0" Content="Genre:"/>
+            <StackPanel Grid.Row="5" Grid.Column="1" x:Name="GenreListBox">
+                <CheckBox x:Name="Nat" Content="Nature"/>
+                <CheckBox x:Name="Geo" Content="Geography"/>
+                <CheckBox x:Name="His" Content="history"/>
+                <CheckBox x:Name="Sci" Content="science"/>
+                <CheckBox x:Name="Wcu" Content="World_Culture"/>
+                <CheckBox x:Name="New" Content="News"/>
+                <CheckBox x:Name="Vid" Content="Video_Game"/>
+            </StackPanel>
+            <Label Grid.Row="6" Grid.Column="0" Content="Frequency"/>
+            <StackPanel Grid.Row="6" Grid.Column="1" x:Name="FrequencyList">
+                <RadioButton x:Name="Daily" Content="Daily"/>
+                <RadioButton x:Name="Weekly" Content="Weekly"/>
+                <RadioButton x:Name="BiWeekly" Content="BiWeekly"/>
+                <RadioButton x:Name="Monthly" Content="Monthly"/>
+                <RadioButton x:Name="BiMonthly" Content="BiMonthly"/>
+                <RadioButton x:Name="Quarterly" Content="Quarterly"/>
+                <RadioButton x:Name="SemiAnnually" Content="SemiAnnually"/>
+                <RadioButton x:Name="Annually" Content="Annually"/>
+                <RadioButton x:Name="BiAnnually" Content="BiAnnually"/>
+            </StackPanel>
+            <Label Grid.Row="7" Grid.Column="0" Content="Discount"/>
+            <TextBox Grid.Row="7" Grid.Column="1" x:Name="discountBox"/>
+            <Button Grid.Row="10" Grid.Column="1" Content="Edit Journal" Click="EditJournalClick"/>
+
+        </Grid>
+    </Grid>
+</Window>
