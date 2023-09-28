@@ -5,4 +5,6 @@ The system will allow librarians to add, edit, delete and filter items based on 
 It will also allow borrowers to borrow and return books and display comments on late returns.
 In addition, the system will provide daily reports on items and allow the creation of sales based on various parameters.
 
-[מסמך אפיון.pptx](https://github.com/yonac2803/Library-App/files/12748264/default.pptx)
+[Specification document](https://github.com/yonac2803/Library-App/files/12748264/default.pptx)
+[Library system - instructions - Hebrew](https://github.com/yonac2803/Library-App/files/12748270/-.docx)
+[system requirements.docx](https://github.com/yonac2803/Library-App/files/12748288/system.requirements.docx)
